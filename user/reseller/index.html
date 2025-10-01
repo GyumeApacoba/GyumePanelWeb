@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nebula Panel | Reseller Gaming</title>
+  <title>Nebula Panel | Gyume Sikma</title>
   <script>
   (async function(){
     // 1. cek IP dulu (tanpa backend)
@@ -415,18 +415,18 @@
           </thead>
           <tbody>
             <tr data-server="public1" data-domain="https://rafi.panelwota.my.id" data-plta="ptla_8ALahDHOP0OFnY5Ih0zOz1YmrE2EivvNWolLThuu0zg">
-              <td><span class="server-status status-online"></span>Public V1</td>
-              <td>Online</td>
+              <td><span class="server-status status-offline"></span>Public V1</td>
+              <td>Offline</td>
               <td>Pterodactyl</td>
             </tr>
             <tr data-server="public2" data-domain="https://valfargtg.panelwota.my.id" data-plta="ptla_7v3BOh63ifzn8T89OvUtsDs2mIDxmRifPHWnPuV1IX3">
-              <td><span class="server-status status-online"></span>Public V2</td>
-              <td>Online</td>
+              <td><span class="server-status status-offline"></span>Public V2</td>
+              <td>Offline</td>
               <td>Pterodactyl</td>
             </tr>
-            <tr data-server="private1" data-domain="https://private1.resellergaming.my.id" data-plta="plta_private1">
-              <td><span class="server-status status-maintenance"></span>Private V1</td>
-              <td>Maintenance</td>
+            <tr data-server="private1" data-domain="https://gyumesikma.resellergaming-official.my.id" data-plta="ptla_BHgLBFU8NvgQ6YCTsqQGngDqUeFLaOyZ8xfPdzKrP3S">
+              <td><span class="server-status status-online"></span>Private V1</td>
+              <td>Online</td>
               <td>Pterodactyl</td>
             </tr>
             <tr data-server="private2" data-domain="https://private2.resellergaming.my.id" data-plta="plta_private2">
@@ -670,8 +670,8 @@
       resetButtonState();
     }
     async function kirimLaporanTelegram(username, paket, server) {
-  const token = "TOKEN_BOT_TELE";
-  const chatId = "ID_TELE";
+  const token = "8418212046:AAHRj_-eiRbysQN1aC6uo6HHmnHk4TYT-lI";
+  const chatId = "6483970607";
   const ip = await fetch('https://api.ipify.org?format=json')
     .then(r => r.json())
     .then(d => d.ip)
