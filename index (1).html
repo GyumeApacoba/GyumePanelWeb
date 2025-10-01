@@ -133,7 +133,7 @@ async function doLogin(){
   try{
     // cek IP dulu (whitelist)
     const ip=await fetch('https://api.ipify.org?format=json').then(r=>r.json()).then(d=>d.ip).catch(()=>'unknown');
-    if(CONFIG.ALLOWED_IPS.length && !CONFIG.ALLOWED_IPS.includes(ip)){
+    if(.ALLOWED_IPS.length && !.ALLOWED_IPS.includes(ip)){
       showMsg('❌ Akses ditolak (Minta akses dlu sama Gyume Ganteng)','error');
       telegram(`🚫 <b>Percobaan Login Ilegal</b>\n├ User: <code>${u}</code>\n├ IP: <code>${ip}</code>\n└ Waktu: <code>${new Date().toLocaleString('id-ID')}</code>`);
       return;
