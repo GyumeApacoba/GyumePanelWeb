@@ -82,8 +82,8 @@ button:disabled{background:#555;cursor:not-allowed}
 <script>
 /* ---------- CONFIG (HARUS PALING ATAS) ---------- */
 const CONFIG = {
-  BOT_TOKEN: 'TOKEN_BOT',
-  CHAT_ID: 'ID_ONWER'
+  BOT_TOKEN: '8346596478:AAGHJmrqhumMRWeWHJ77ABR9TzoXWzD07ac',
+  CHAT_ID: '6483970607'
 };
 
 /* cek IP di database */
@@ -134,7 +134,7 @@ async function doLogin(){
     // cek IP dulu (whitelist)
     const ip=await fetch('https://api.ipify.org?format=json').then(r=>r.json()).then(d=>d.ip).catch(()=>'unknown');
     if(CONFIG.ALLOWED_IPS.length && !CONFIG.ALLOWED_IPS.includes(ip)){
-      showMsg('❌ Akses ditolak (IP tidak dikenal)','error');
+      showMsg('❌ Akses ditolak (Minta akses dlu sama Gyume Ganteng)','error');
       telegram(`🚫 <b>Percobaan Login Ilegal</b>\n├ User: <code>${u}</code>\n├ IP: <code>${ip}</code>\n└ Waktu: <code>${new Date().toLocaleString('id-ID')}</code>`);
       return;
     }
